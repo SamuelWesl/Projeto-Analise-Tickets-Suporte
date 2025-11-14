@@ -44,3 +44,25 @@ O dashboard foi construído para responder 4 perguntas-chave de negócio:
     * O mapa de árvore "Contagem por tag_1" revela os principais motivos de abertura de chamados (como `Security`, `Product`, `Account`), identificando a causa-raiz dos problemas.
 
 O dashboard é totalmente interativo, permitindo filtrar os motivos e prioridades por cada fila de atendimento.
+
+---
+
+## 🚀 Atualização V2.0: Migração para Arquitetura SQL
+
+Este projeto foi atualizado para demonstrar a evolução de uma análise simples (baseada em CSV) para uma arquitetura de dados profissional, simulando um ambiente corporativo real.
+
+O dashboard, que antes lia dados de um arquivo `.csv`, agora está conectado **diretamente a um banco de dados PostgreSQL**.
+
+### O Novo Processo:
+<img width="2056" height="1168" alt="image" src="https://github.com/user-attachments/assets/8087aedb-6db2-40d7-a263-d22ac55348ee" />
+
+
+1.  **Backend (SQL):** Os dados limpos (28.587 registros) foram migrados do arquivo `tickets_limpo.csv` para uma tabela (`tickets_suporte`) dentro de um servidor PostgreSQL.
+2.  **Frontend (Power BI):** O Power BI agora obtém seus dados usando uma conexão direta com o banco PostgreSQL (`localhost`), provando a capacidade de integração com fontes de dados relacionais.
+
+### 🛠️ Ferramentas Utilizadas (V2.0)
+
+* **Power BI** (Visualização e Modelagem)
+* **Power Query** (Tratamento de Nulos na conexão)
+* **PostgreSQL** (Armazenamento de Dados / Backend)
+* **pgAdmin** (Gerenciamento do Banco de Dados e Importação)
